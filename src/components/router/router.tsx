@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { MainLayout } from "../layouts/main_layouts";
 import Home from "../home/home";
-import Products from "../products/product/product";
+import Products from "../products/products";
 import Product from "../products/product/product";
 import Help from "../help/help";
 import About from "../about/about";
@@ -12,7 +12,7 @@ export const Router = () => (
     <Route path="/" element={<MainLayout />}>
       <Route index element={<Home />}></Route>;
       <Route path="products" element={<Products />} />
-      <Route path="products/:productId" element={<Product />} />
+      <Route path="products/1" element={<Product />} />
       <Route path="about" element={<About />} />
       <Route path="help" element={<Help />} />
       <Route path="*" element={<NotFound />} />
